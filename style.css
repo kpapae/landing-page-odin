@@ -2,20 +2,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     background-color: #1f2937;
    
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
 }
+
+/* navbar */
 
 .navbar {
     display: flex;
@@ -35,10 +43,22 @@ a {
     color: #e5e7eb;
 }
 
+.navbar li a:hover {
+    color: #b3780d;
+    text-decoration: underline;
+}
+
 .logo {
     font-size: 24px;
-    color: #f9faf8;
+    color: #b3780d;
 }
+
+.logo:hover{
+    color: #e5e7eb;
+    cursor: default;
+}
+
+/* hero */
 
 .hero {
     background-color: #1f2937;
@@ -50,7 +70,6 @@ a {
 }
 
 .hero-left {
-    flex-basis: 35%;
     height: 200px;
     margin-left: 50px;
     flex: 1;
@@ -58,7 +77,7 @@ a {
 }
 
 .hero-left h2 {
-    font-size: 48px;
+    font-size: 4rem;
     color: #f9faf8;
 }
 
@@ -68,56 +87,163 @@ a {
 }
 
 .hero-btn {
-    background: #3882F6;
+    background: #b3780d;
     border-radius: 10px;
     width: 110px;
     height: 30px;
     color: #f9faf8;
     margin-top: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
+.hero-btn:hover {
+    transform: translateY(-3px);
+    background: #b3780d;
+    color: #1f2937;
+}
 
 .hero-right {
-    border: 2px solid #f9faf8;
+    border: 2px solid #b3780d;
     flex-basis: 50%;
-    height: 200px;
+    height: 400px;
     flex: 1;
-
+    object-fit: contain;
 }
 
 .hero-right img {
     width: 100%;   
     height: 100%;
-    object-fit: cover;
 }
 
-.random-info {
+/* quote and about us section */
+
+q {
+    font-weight: bold;
+    display: block;
+}
+
+.about-us-container {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #e5e7eb;
+    text-align: center;
+}
+
+ /* equipment-container section */
+
+.equipment-container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 15px;
-    background-color: white;
-    height: 500px;
+    padding: 15px 15px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 50p;
+    color: #f9faf8;
+    text-align: center;
 }
 
-.random-info h2 {
+.equipment-container h2 {
     align-self: center;
 }
 
-.random-info ul {
+.equipment-container ul {
     display: flex;
     justify-content: space-around;
     align-self: center;
-    list-style: none;
     gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
 }
-.random-info li {
-    height: 100px;
-    width: 100px;
-    border: #3882F6 2px solid;
+.equipment-container li {
+    height: 150px;
+    width: 150px;
     border-radius: 8px;
+    display: inline-block;
+}
 
+.equipment-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: #b3780d 2px solid;
+}
+
+/* membership section */
+
+.membership-container {
+    height: au;
+    width: 100%;
+    padding: 15px;
+    background-color: #e5e7eb;
+    text-align: center;
+}
+
+.tiers-list {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tiers-list li {
+    list-style: none;
+}
+
+.membership-container h3:hover{
+    color: #b3780d;
+    cursor: default;
+}
+
+/* locations section */
+
+.locations-container {
+    height: 615px;
+    color: #f9faf8;
+    text-align: center;
+    line-height: 30px;
+}
+
+.location-1 {
+    display: flex;
+    border: #b3780d solid 4px;
+    padding: 10px;
+}
+
+.location-1 ul {
+    list-style: none;
+    flex: 1;
+}
+
+.location-1 img {
+    flex: 1;
+    height: 256px;
+    width: 256px;
+}
+.location-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    border: #b3780d solid 4px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.location-2 ul {
+    list-style: none;
+    flex: 1;
+}
+
+.location-2 img {
+    flex: 1;
+    height: 256px;
+}
+/* footer section */
+.footer {
+    height: 100px;
+    padding-top: 15px;
+    background-color: #e5e7eb;
+    text-align: center;
 }
