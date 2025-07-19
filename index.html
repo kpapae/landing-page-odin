@@ -3,40 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Landing Page</title>
+    <title>Titans</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Header Logo</h1>
-            </div>
-        
-            <ul class="nav-links">
-                <li><a href="#">header link one</a></li>
-                <li><a href="#">header link two</a></li>
-                <li><a href="#">header link three</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="container">
-    <section class="hero">
-        <div class="hero-left">
-            <div class="hero-left-text">
-                <h2>This website is awesome</h2>
-                <p>This website has some subtext that goes uder the main title. 
-                    It's a smaller font and the color is lower contrast.</p>
-                <button class="hero-btn">Sign up</button>
-            </div>
-
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Titans</h1>
+                </div>
+            
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#equipment">Equipment</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="hero-right">
-            <img src="https://images.pexels.com/photos/31298987/pexels-photo-31298987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <div class="container">
+    <section class="hero">
+            <div class="hero-left">
+                <div class="hero-left-text">
+                    <h2>Build your dream physique</h2>
+                    <button class="hero-btn">Sign up</button>
+                </div>
+
+            </div>
+            <div class="hero-right">
+                <img src="images/hero-image4.jpg">
+            </div>
+    </section>
+        </div>
+    <section class="about-us-container container" id="about-us">
+        <q>No man has the right to be an amateur in the matter of physical training. It is a shame for a man to grow old
+             without seeing the beauty and strength of which his body is capable</q>
+        <span>-Socrates</span>
+        <br><br>
+        <h2>Who are we?</h2>
+        <p>We opened our first gym in 2012 with one goal in mind, help you reach your potential! Ever since then we have given the means to over 20.000 people best utilize their time in the gym.
+            The team we've assembled that includes trainers, nutritionists and chefs is prepared to help you achieve your goals!
+        </p>
+    </section>
+
+    <section class="equipment-container container" id="equipment">
+            <h2>State-of-the-art gym equipment</h2>
+            <p>A key pillar of how we operate is that we never compromise. We're dedicated to providing the best experience possible, 
+                so we always ensure our gym equipment meets the highest standards
+            </p>
+            <ul>
+                <li>
+                    <div class="list-img">
+                        <img src="images\gym-1.jpg" alt="gym-1">
+                    </div>
+                </li>
+                <li>
+                    <div class="list-img">
+                        <img src="images\gym-2.jpg" alt="gym-2">
+                    </div>
+                </li>
+                <li>
+                    <div class="list-img">
+                        <img src="images\gym-3.jpg" alt="gym-3">
+                    </div>
+                </li>
+                <li>
+                    <div class="list-img">
+                        <img src="images\gym-4.jpg" alt="gym-4">
+                    </div>
+                </li>
+            </ul>
+            <p>Our trainers are always there for you to provide whatever assistance you may require with 
+                the correct and safe usage of our equipment!
+            </p>
+    </section>
+    
+
+    <section class="membership-container container" id="membership">
+                <h2>Membership</h2>
+                <p>We offer a variety of tiers of membership so you can choose the one that fits your
+                    needs and schedule the best
+                </p>
+                <ul class="tiers-list">
+                <li>
+                    <div>
+                        <img src="images/icon-1.png" alt="icon-1">
+                        <ul>
+                            <h3>Beginner</h3>
+                            <li>Daily Pass</li>
+                            <li>No commitments</li>
+                            <li>Trainer assistance provided</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/icon-2.png" alt="icon-2">
+                        <h3>Entusiast</h3>
+                        <ul>
+                            <li>Monthly fee</li>
+                            <li>Trainer assistance provided</li>
+                            <li>Persolized nutrional and training plans</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/icon-3.png" alt="icon-3">
+                        <h3>Full Member</h3>
+                        <ul>
+                            <li>Monthly fee</li>
+                            <li>Trainer assistance provided</li>
+                            <li>Persolized nutrional and training plans</li>
+                            <li>Access to our sauna and massage facilities</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+    </section>
+    <section class="locations-container container" id="locations">
+        <h2>You can find us here!</h2>
+        <div class="location-1">
+        <ul>
+            <li><h3>Archiepiskopou Makariou 51, Ioannina 452 21</h3></li>
+            <li>Tel: +30 26513 08371</li>
+            <li>Email: titansgym@outlook.com.gr</li>
+            <li>Opening Hours:</li>
+            <li>Monday - Friday: 8:00 AM - 12:00 AM</li>
+            <li>Saturday: 10:00 AM - 10:00 PM</li>
+            <li>Sunday: 5:00 PM - 10:00 PM</li>
+        </ul>
+        <img src="images/location1.jpg">
+        </div>
+        <div class="location-2">
+            <ul>
+                <li><h3>Napoleontos Zerva 19, Ioannina 453 32</h3></li>
+                <li>Tel: +30 2651 115774</li>
+                <li>Email: titansgym.ioa@gmail.com </li>
+                <li>Opening Hours:</li>
+                <li>Monday - Sunday: 8:00 AM - 12:00 AM</li>
+            </ul>
+        <img src="images/location2.webp">
         </div>
     </section>
-    </div>
+    <footer class="footer container">
+        © 2025 Titans Gyms. All rights reserved.
+    </footer>
 </body>
 </html>
