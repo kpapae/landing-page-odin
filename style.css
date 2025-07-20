@@ -155,10 +155,9 @@ q {
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap;
-    padding-bottom: 60px;
 }
 .equipment-container li {
-    height: 150px;
+    height: auto;
     width: 150px;
     border-radius: 8px;
     display: inline-block;
