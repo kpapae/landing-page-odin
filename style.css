@@ -200,7 +200,6 @@ q {
 /* locations section */
 
 .locations-container {
-    height: 615px;
     color: #f9faf8;
     text-align: center;
     line-height: 30px;
@@ -210,6 +209,7 @@ q {
     display: flex;
     border: #b3780d solid 4px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .location-1 ul {
@@ -228,6 +228,8 @@ q {
     border: #b3780d solid 4px;
     margin-top: 5px;
     padding: 5px;
+    flex-wrap: wrap;
+    height: auto;
 }
 
 .location-2 ul {
@@ -239,10 +241,158 @@ q {
     flex: 1;
     height: 256px;
 }
+
 /* footer section */
-.footer {
-    height: 100px;
+
+
+.footer-container {
+    height: auto;
     padding-top: 15px;
     background-color: #e5e7eb;
     text-align: center;
+    color: #1f2937;
+}
+
+.footer-container p {
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 30px;
+}
+
+/* responsive */
+
+/* 1024px */
+
+@media (max-width: 1024px) {
+    .navbar ul {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero-left h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-right {
+    height: auto;
+  }
+}
+
+/* 768px */
+@media (max-width: 768x) {
+    .equipment-container ul,
+  .tiers-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .equipment-container li,
+  .tiers-list li {
+    margin-bottom: 20px;
+  }
+
+  .location-1,
+  .location-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .location-1 img,
+  .location-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-us-container,
+  .membership-container,
+  .locations-container {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .about-us-container p,
+  .membership-container p {
+    font-size: 1rem;
+  }
+}
+
+/* 480px */
+
+@media (max-width: 480px){
+    h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-left h2 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    font-size: 14px;
+    gap: 3px;
+  }
+
+  .tiers-list,
+  .equipment-container ul {
+    padding: 10px 0;
+  }
+
+  .location-1,
+  .location-2 {
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .location-1 img,
+  .location-2 img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .about-us-container,
+  .membership-container,
+  .equipment-container,
+  .locations-container {
+    padding: 20px 10px;
+  }
+
+  .tiers-list li,
+  .equipment-container li {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer p{
+    font-size: 0.8rem;
+  }
 }
